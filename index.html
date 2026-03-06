@@ -6,12 +6,13 @@
 <title>Happy Birthday!</title>
 
 <style>
+
 body{
   margin:0;
-  font-family: Arial, sans-serif;
+  font-family:"Edwardian Script ITC", cursive;
   text-align:center;
-  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
-  color:white;
+  background: linear-gradient(180deg,#7A3B69,#9A879D);
+  color:#CFCFCD;
 }
 
 .container{
@@ -20,50 +21,339 @@ body{
 
 h1{
   font-size:2.5em;
-}
-
-img{
-  width:200px;
-  border-radius:20px;
-  margin:20px 0;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .message{
   font-size:1.2em;
   max-width:400px;
   margin:auto;
+  font-family:"Corbel", sans-serif;
 }
 
-button{
-  margin-top:20px;
-  padding:12px 20px;
-  font-size:16px;
-  border:none;
-  border-radius:10px;
-  background:white;
-  color:#ff5c8a;
+/* GRID FOR 25 CARDS */
+
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:20px;
+  justify-items:center;
+  margin-top:30px;
 }
+
+/* FLIP CARD */
+
+.flip-card{
+  width:120px;
+  height:120px;
+  perspective:1000px;
+}
+
+.flip-card-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition: transform 0.8s;
+  transform-style:preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner{
+  transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border-radius:12px;
+  backface-visibility:hidden;
+  font-family:"Corbel", sans-serif;
+}
+
+/* FRONT */
+
+.flip-card-front{
+  background:#563440;
+  color:white;
+  font-size:26px;
+  font-family:"Corbel";
+}
+
+/* BACK */
+
+.flip-card-back{
+  background:#D7DEDC;
+  color:#563440;
+  transform:rotateY(180deg);
+  padding:10px;
+  font-size:14px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:800px){
+  .card-grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width:500px){
+  .card-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+/* FOOTER*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7A3B69;
+  color: white;
+  text-align: right;
+  font-family:"Corbel", sans-serif;
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
-  <h1>🎉 Happy Birthday Alex! 🎂</h1>
 
-  <img src="friend.jpg" alt="Birthday person">
+<h1>Happiest Birthday!</h1>
 
-  <p class="message">
-  Wishing you an amazing birthday filled with happiness,
-  laughter, and cake. Thanks for being an awesome friend!
-  </p>
+<p class="message">
+ฅ^>⩊<^ฅ 25 wishes for your 25th birthday
+</p>
 
-  <button onclick="showSurprise()">Tap for Surprise 🎁</button>
+<div class="card-grid">
+
+<!-- 1 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">1</div>
+<div class="flip-card-back">Wishing you happiness</div>
+</div>
 </div>
 
+<!-- 2 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">2</div>
+<div class="flip-card-back">Wishing you constant good health</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">3</div>
+<div class="flip-card-back">Wishing you abundance of wealth</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">4</div>
+<div class="flip-card-back">Wishing you </div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">5</div>
+<div class="flip-card-back">Wishing you </div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">6</div>
+<div class="flip-card-back">Wishing you </div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">7</div>
+<div class="flip-card-back">Wishing you </div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">8</div>
+<div class="flip-card-back">Wishing your dreams to come true</div>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">9</div>
+<div class="flip-card-back">Wishing you having peace daily</div>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">10</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">11</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">12</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 13 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">13</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 14 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">14</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 15 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">15</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 16 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">16</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 17 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">17</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 18 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">18</div>
+<div class="flip-card-back">Wishing you restful nights</div>
+</div>
+</div>
+
+<!-- 19 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">19</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 20 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">20</div>
+<div class="flip-card-back">Wishing your days filled with lots of laughter</div>
+</div>
+</div>
+
+<!-- 21 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">21</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 22 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">22</div>
+<div class="flip-card-back">Wishing you kindness around you</div>
+</div>
+</div>
+
+<!-- 23 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">23</div>
+<div class="flip-card-back">Wishing you love and warmth</div>
+</div>
+</div>
+
+<!-- 24 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">24</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<!-- 25 -->
+<div class="flip-card" onclick="flipCard(this)">
+<div class="flip-card-inner">
+<div class="flip-card-front">25</div>
+<div class="flip-card-back">Wishing you</div>
+</div>
+</div>
+
+<div class="footer">
+  <p>A°❀⋆.ೃ࿔*:･ </p>
+</div>
+
+</div>
 <script>
-function showSurprise(){
-  alert("🎉 Surprise! Hope your day is amazing!");
+
+function flipCard(card){
+
+  document.querySelectorAll(".flip-card").forEach(c=>{
+    if(c!==card){
+      c.classList.remove("flipped");
+    }
+  });
+
+  card.classList.toggle("flipped");
 }
 </script>
 
