@@ -10,45 +10,41 @@
 body{
   margin:0;
   min-height:100vh;
-  font-family:"Edwardian Script ITC", cursive;
+  font-family: "Poppins", sans-serif;
   text-align:center;
-  background: linear-gradient(180deg,#7A3B69,#9A879D);
+  background: linear-gradient(180deg,#6d345d,#9b7ea3,#c9b4ce);
   color:#CFCFCD;
 }
 
 .container{
-  padding:40px 20px;
+  padding:60px 20px;
+  max-width:500px;
+  margin:auto;
 }
 
 h1{
-  font-size:2.5em;
-  text-shadow: 2px 2px 4px #000000;
+  font-family: "Playfair Display", serif;
+  font-size:2.2em;
 }
 
 .message{
-  font-size:0.8em;
-  max-width:400px;
-  margin:auto;
-  font-family:"Corbel", sans-serif;
+  font-size:0.95em;
+  line-height:1.6;
 }
 
 /* GRID FOR 25 CARDS */
 
 .card-grid{
   display:grid;
-  grid-template-columns: repeat(5,1fr);
-  gap:2px;
-  justify-items:center;
+  grid-template-columns: repeat(5, 1fr);
+  gap:10px;
   margin-top:30px;
 }
 
 /* FLIP CARD */
 
-.flip-card{
-  width:75px;
-  height:75px;
-  perspective:1000px;
-  overflow:hidden;
+.flip-card:active{
+  transform:scale(0.96);
 }
 
 .flip-card-inner{
@@ -81,20 +77,16 @@ h1{
 
 .flip-card-front{
   background:#563440;
-  color:white;
-  font-size:15px;
-  font-family:"Corbel";
+  border-radius:12px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.25);
 }
 
 /* BACK */
 
 .flip-card-back{
-  background:#D7DEDC;
+  background:#F3F5F4;
   color:#563440;
-  transform:rotateY(180deg);
-  padding:5px;
-  box-sizing:border-box;
-  font-size:10px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.15);
 }
 
 
@@ -346,6 +338,7 @@ function flipCard(card){
 
 </body>
 </html>
+
 
 
 
