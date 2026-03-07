@@ -1,3 +1,12 @@
+<?php
+$expTime = strtotime('March 8, 2026');
+$expMsg = "Happy belated birthday";
+if ($expTime < time()) {
+	echo $expMsg;
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +23,8 @@ body{
   min-height:100vh;
   font-family:"Poppins", sans-serif;
   text-align:center;
-  background: linear-gradient(180deg,#6d345d,#9b7ea3,#c9b4ce);
-  color:#CFCFCD;
+  background-colour: #ffffff;
+  color:#9b7ea3;
 }
 
 .container{
@@ -89,7 +98,7 @@ h1{
 /* FRONT */
 
 .flip-card-front{
-  background:#563440;
+  background:black;
   color:white;
   box-shadow:0 6px 14px rgba(0,0,0,0.25);
 }
@@ -118,10 +127,10 @@ h1{
 
 <div class="container">
 
-<h1>Happiest Birthday!</h1>
+<h1>Happiest Birthday Natalia!</h1>
 
 <p class="message">
-ฅ^>⩊<^ฅ 25 wishes for your 25th birthday
+Here's 25 wishes for your 25th birthday
 </p>
 
 <div class="card-grid">
@@ -130,7 +139,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">1</div>
-<div class="flip-card-back">Wishing you happiness</div>
+<div class="flip-card-back">Wishing you lots of happiness</div>
 </div>
 </div>
 
@@ -154,7 +163,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">4</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you ease in your days</div>
 </div>
 </div>
 
@@ -162,7 +171,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">5</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you strength to carry on</div>
 </div>
 </div>
 
@@ -170,7 +179,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">6</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you patience through whatever</div>
 </div>
 </div>
 
@@ -178,7 +187,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">7</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you perseverence and resilience</div>
 </div>
 </div>
 
@@ -186,7 +195,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">8</div>
-<div class="flip-card-back">Wishing your dreams to come true</div>
+<div class="flip-card-back">Wishing for alllll your dreams to come true</div>
 </div>
 </div>
 
@@ -194,7 +203,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">9</div>
-<div class="flip-card-back">Wishing you having peace daily</div>
+<div class="flip-card-back">Wishing you having at least few small moments of peace daily</div>
 </div>
 </div>
 
@@ -202,7 +211,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">10</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you enjoying your day to day life</div>
 </div>
 </div>
 
@@ -210,7 +219,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">11</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing for you to go on a grand adventure</div>
 </div>
 </div>
 
@@ -218,7 +227,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">12</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you get to travel as much as you want</div>
 </div>
 </div>
 
@@ -226,7 +235,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">13</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you well, always</div>
 </div>
 </div>
 
@@ -234,7 +243,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">14</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you experiencing amazing food</div>
 </div>
 </div>
 
@@ -242,7 +251,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">15</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you tasting the best drinks</div>
 </div>
 </div>
 
@@ -250,7 +259,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">16</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you to receive more love than you think you deserve</div>
 </div>
 </div>
 
@@ -258,7 +267,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">17</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you to have lots of time with your loved ones</div>
 </div>
 </div>
 
@@ -274,7 +283,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">19</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you being able to go wherever you want (+New Zealand)</div>
 </div>
 </div>
 
@@ -282,7 +291,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">20</div>
-<div class="flip-card-back">Wishing your days filled with lots of laughter</div>
+<div class="flip-card-back">Wishing your days to be filled with lots of laughter</div>
 </div>
 </div>
 
@@ -290,7 +299,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">21</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you being loved by all the cats in the world</div>
 </div>
 </div>
 
@@ -298,7 +307,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">22</div>
-<div class="flip-card-back">Wishing you kindness around you</div>
+<div class="flip-card-back">Wishing you kindness all around you</div>
 </div>
 </div>
 
@@ -314,7 +323,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">24</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you with nothing but the best</div>
 </div>
 </div>
 
@@ -322,7 +331,7 @@ h1{
 <div class="flip-card" onclick="flipCard(this)">
 <div class="flip-card-inner">
 <div class="flip-card-front">25</div>
-<div class="flip-card-back">Wishing you</div>
+<div class="flip-card-back">Wishing you know you always deserve nothing less than the absolute best</div>
 </div>
 </div>
 
@@ -346,5 +355,4 @@ function flipCard(card){
 
 </body>
 </html>
-
 
